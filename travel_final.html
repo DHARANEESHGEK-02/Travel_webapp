@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#journeys">Journeys</a></li>
+      <li><a href="#attractions">Attractions</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#review us">Review Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Logo --> 
+   
+
+  <div id="home" class="section">
+    <div class="logo-box"> 
+      <img src="ship.jpg" alt="Logo"> 
+    </div>
+    <video autoplay muted loop id="homeVideo">
+      <source src="travel.mp4" type="video/mp4">
+    </video>
+    <div class="home-content overlay-content">
+      <h1>Welcome to Explore the World</h1>
+      <p>Your adventure begins here! Discover breathtaking destinations, immerse yourself in diverse cultures, and embark on unforgettable journeys. Whether you're looking for a relaxing getaway or an action-packed adventure, we have something for everyone.</p>
+      <p>Browse through our curated selection of travel packages and plan your next trip with ease. From scenic landscapes to bustling cities, our travel guides and tips will help you make the most of your experience. Join us on a journey to explore the world like never before!</p>
+    </div>
+    <div class="overlay">
+      <button onclick="openSignUpForm()">Sign Up</button>
+      <button onclick="login()">Login</button>
+    </div>
+  </div>
+
+  <!-- Service Page -->
+  <div id="services" class="section">
+    <video autoplay muted loop id="servicesVideo">
+      <source src="travel3.mp4" type="video/mp4">
+    </video>
+    <div class="service-overlay">
+      <div class="service-grid">
+        <div class="service">
+          <img src="car.jpeg" alt="Car">
+          <h4>Car</h4>
+          <p>Comfortable and convenient car rental services for your travel needs.</p>
+        </div>
+        <div class="service">
+          <img src="train.webp" alt="Train">
+          <h4>Train</h4>
+          <p>Efficient and scenic train journeys to explore diverse landscapes.</p>
+        </div>
+        <div class="service">
+          <img src="bus.avif" alt="Bus">
+          <h4>Bus</h4>
+          <p>Affordable and reliable bus services for group travel and sightseeing.</p>
+        </div>
+        <div class="service">
+          <img src="flight.jpg" alt="Flight">
+          <h4>Flight</h4>
+          <p>Quick and comfortable flights to your desired destinations.</p>
+        </div>
+        <div class="service">
+          <img src="ship.jpg" alt="Boat">
+          <h4>Boat</h4>
+          <p>Scenic and relaxing boat tours to experience coastal beauty.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Up Pop-Up Form -->
+  <div id="signUpForm" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeSignUpForm()">&times;</span>
+      <h2>Sign Up</h2>
+      <form action="#" method="post">
+        <label for="country">Country:</label>
+        <select id="countryDropdown" onchange="updateCountry()">
+          <option value="">Select your country</option>
+          <option value="Australia">Australia</option>
+          <option value="Brazil">Brazil</option>
+          <option value="Canada">Canada</option>
+          <option value="China">China</option>
+          <option value="France">France</option>
+          <option value="Germany">Germany</option>
+          <option value="India">India</option>
+          <option value="Italy">Italy</option>
+          <option value="Japan">Japan</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Netherlands">Netherlands</option>
+          <option value="Russia">Russia</option>
+          <option value="South Africa">South Africa</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="United States">United States</option>
+        </select>
+        <input type="text" id="country" name="country" required placeholder="Country">
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required placeholder="Mobile number">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="Email-Address">
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+<!--Destination-->
+<div id="journeys" class="section">
+  <div class="background-image" style="background-image: url('dark.avif');"></div>
+  <div class="journey-grid">
+    <div class="journey">
+      <img src="tamilnadu.jpg" alt="Tamil Nadu">
+      <div class="overlay">
+        <h3>Tamil Nadu</h3>
+        <p>Discover the temples, beaches, and hill stations of Tamil Nadu, a state rich in cultural heritage.</p>
+      </div>
+    </div>
+    <div class="journey">
+      <img src="kerla.webp" alt="Kerala">
+      <div class="overlay">
+        <h3>Kerala</h3>
+        <p>Experience the tranquil backwaters, lush green landscapes, and vibrant culture of Kerala.</p>
+      </div>
+    </div>
+    <div class="journey">
+      <img src="punjab.jpeg" alt="Punjab">
+      <div class="overlay">
+        <h3>Punjab</h3>
+        <p>Explore the land of five rivers, famous for its rich history, vibrant festivals, and delicious cuisine.</p>
+      </div>
+    </div>
+    <div class="journey">
+      <img src="rajasthan.jpeg" alt="Rajasthan">
+      <div class="overlay">
+        <h3>Rajasthan</h3>
+        <p>Visit the majestic forts, palaces, and deserts of Rajasthan, a state with a royal heritage.</p>
+      </div>
+    </div>
+    <div class="journey">
+      <img src="karnataka.jpg" alt="Karnataka">
+      <div class="overlay">
+        <h3>Karnataka</h3>
+        <p>Discover the diverse landscapes, historic sites, and vibrant cities of Karnataka.</p>
+      </div>
+    </div>
+    <div class="journey">
+      <img src="andhra.jpg" alt="Andhra Pradesh">
+      <div class="overlay">
+        <h3>Andhra Pradesh</h3>
+        <p>Explore the rich history, stunning beaches, and cultural landmarks of Andhra Pradesh.</p>
+      </div>
+    </div>
+    <div class="journey">
+      <img src="ladakh.jpeg" alt="Ladakh">
+      <div class="overlay">
+        <h3>Ladakh</h3>
+        <p>Experience the breathtaking landscapes, serene monasteries, and adventurous treks of Ladakh.</p>
+      </div>
+    </div>
+    <div class="journey">
+      <img src="mumbai.jpg" alt="Mumbai">
+      <div class="overlay">
+        <h3>Mumbai</h3>
+        <p>Visit the bustling metropolis of Mumbai, known for its iconic landmarks and vibrant nightlife.</p>
+      </div>
+    </div>
+    <div class="journey">
+      <img src="assam.jpg" alt="Assam">
+      <div class="overlay">
+        <h3>Assam</h3>
+        <p>Experience the Culture and frangrance of tea .</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Attractions-->
+
+<div id="attractions" class="section">
+  <div class="selection-bar">
+    <label for="places">Choose a place:</label>
+    <select id="places" onchange="displayAttraction()">
+      <option value="">Select a place</option>
+      <option value="Kerala">Kerala</option>
+      <option value="Tamil Nadu">Tamil Nadu</option>
+      <option value="Punjab">Punjab</option>
+      <option value="Rajasthan">Rajasthan</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+      <option value="Ladakh">Ladakh</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Assam">Assam</option>
+    </select>
+  </div>
+
+  <div id="attraction-details" class="attraction-details">
+    <!-- Details of the selected place will be displayed here -->
+  </div>
+</div>
+
+
+
+<!--Contact us -->
+<div id="contact" class="section">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Whether you have a question, a suggestion, or just want to say hello, feel free to reach out to us.</p>
+    
+    <div class="contact-form">
+      <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter Email-adress">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Enter any message"></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    
+    <div class="contact-info">
+      <h3>Our Office</h3>
+      <p>123 Travel Lane, Adventure City, India</p>
+      <p>Email: contact@exploretheworld.com</p>
+      <p>Phone: +91 12345 67890</p>
+      
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+    
+    <div class="map-container">
+      <h3>Our Location</h3>
+      <!-- Replace this iframe src with your Google Maps embed code -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3984837385693!2d144.96305761531636!3d-37.81410797975147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6433ccbb5d6df%3A0x8b2a57e1f9d1e567!2sFederation+Square%2C+Melbourne+VIC+3000%2C+Australia!5e0!3m2!1sen!2sin!4v1615486587195!5m2!1sen!2sin" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+    
+    <div class="testimonials">
+      <h3>What Our Clients Say</h3>
+      <div class="testimonial">
+        <p>"Our trip was fantastic! The service was excellent, and everything was perfectly organized. We'll definitely book with you again!"</p>
+        <h4>- John Doe</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Thank you for an unforgettable experience! The itinerary was well-planned, and the support team was very helpful."</p>
+        <h4>- Jane Smith</h4>
+      </div>
+      <div class="testimonial">
+        <p>"I had the best vacation ever! From the moment I booked until the end of the trip, everything was smooth and enjoyable."</p>
+        <h4>- Emily Johnson</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<link rel="stylesheet" href="travel.css">
+<script src="travel.js"></script>
