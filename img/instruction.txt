@@ -1,0 +1,12 @@
+1.It should have 5 section like Home,Services,Journeys,Attractions,Contact Us
+
+2.In Home page top right corner there should have 2 buttons sign up and login and also The entire home page must be filled with live video In that the button should be ovelayed.
+
+3.In services section There should have 5 modes of transactions like car,train,bus,flight and bus. The service sections must have 2 rows.It must also filled with background video and the services should be overlayed.Then It should consist image to add on those services.(It must take the whole page (split the image to colums and rows There should be two colums and two rows if any spaces left leave it)
+
+4.In journeys sections,It should consist 12 states in India (Tamil Nadu ,Kerla,Punjab,rajasthan,Karnataka,Andhra Pradesh,Ladakh,Mumbai) with Ai generated decyption also it must contain 3 in a row(It must take the whole page (I need It in rectangle box with curved edges) .The page's background must be filled and the places should be overlayed and also There should be image source is needed(split the image to colums and rows There should be three colums and three rows if any spaces left leave it) while I am pointing my cursor on those image It must in zoom-out effect and also while I am pointing my cursor The name of the place and its descrytpion also overlayed on that image.Make It to proper english
+
+(all the section which I mentioned  above should be in vertical navbar)
+
+5.By default It must have in home page If I selected services page it should display only that page.I I scrolled down next should not be displayed.
+Make this to proper english
